@@ -1,0 +1,494 @@
+--Destroying old gui 
+ local OldGui = game.Players.LocalPlayer.PlayerGui:FindFirstChild('BabftBetterBuild'); if OldGui then OldGui:Destroy() end
+ local BabftBetterBuild = Instance.new('ScreenGui', game.Players.LocalPlayer.PlayerGui) 
+ BabftBetterBuild.Name = 'BabftBetterBuild'
+ 
+ -- Create Instances
+ local Main = Instance.new('Frame'); Main.Parent = BabftBetterBuild
+ local UICorner = Instance.new('UICorner'); UICorner.Parent = Main
+ local UIStroke = Instance.new('UIStroke'); UIStroke.Parent = Main
+ local Select = Instance.new('Frame'); Select.Parent = Main
+ local List = Instance.new('Frame'); List.Parent = Select
+ local UIPadding = Instance.new('UIPadding'); UIPadding.Parent = List
+ local UIGridLayout = Instance.new('UIGridLayout'); UIGridLayout.Parent = List
+ local OpenRT = Instance.new('TextButton'); OpenRT.Parent = List
+ local UIStroke1 = Instance.new('UIStroke'); UIStroke1.Parent = OpenRT
+ local UICorner1 = Instance.new('UICorner'); UICorner1.Parent = OpenRT
+ local OpenFP = Instance.new('TextButton'); OpenFP.Parent = List
+ local UIStroke2 = Instance.new('UIStroke'); UIStroke2.Parent = OpenFP
+ local UICorner2 = Instance.new('UICorner'); UICorner2.Parent = OpenFP
+ local OpenRSV = Instance.new('TextButton'); OpenRSV.Parent = List
+ local UIStroke3 = Instance.new('UIStroke'); UIStroke3.Parent = OpenRSV
+ local UICorner3 = Instance.new('UICorner'); UICorner3.Parent = OpenRSV
+ local RT = Instance.new('Frame'); RT.Parent = Main
+ local EnableRT = Instance.new('TextButton'); EnableRT.Parent = RT
+ local UICorner4 = Instance.new('UICorner'); UICorner4.Parent = EnableRT
+ local UIStroke4 = Instance.new('UIStroke'); UIStroke4.Parent = EnableRT
+ local TransparencyRT = Instance.new('TextBox'); TransparencyRT.Parent = RT
+ local UICorner5 = Instance.new('UICorner'); UICorner5.Parent = TransparencyRT
+ local TransIcon = Instance.new('ImageLabel'); TransIcon.Parent = TransparencyRT
+ local RGBRT = Instance.new('Frame'); RGBRT.Parent = RT
+ local RedRT = Instance.new('TextBox'); RedRT.Parent = RGBRT
+ local UICorner6 = Instance.new('UICorner'); UICorner6.Parent = RedRT
+ local GreenRT = Instance.new('TextBox'); GreenRT.Parent = RGBRT
+ local UICorner7 = Instance.new('UICorner'); UICorner7.Parent = GreenRT
+ local BlueRT = Instance.new('TextBox'); BlueRT.Parent = RGBRT
+ local UICorner8 = Instance.new('UICorner'); UICorner8.Parent = BlueRT
+ local Title = Instance.new('TextLabel'); Title.Parent = Main
+ local UIStroke5 = Instance.new('UIStroke'); UIStroke5.Parent = Title
+ local UICorner9 = Instance.new('UICorner'); UICorner9.Parent = Title
+ local Back = Instance.new('TextButton'); Back.Parent = Main
+ local UICorner10 = Instance.new('UICorner'); UICorner10.Parent = Back
+ local UIDragDetector = Instance.new('UIDragDetector'); UIDragDetector.Parent = Main
+ local HideMain = Instance.new('TextButton'); HideMain.Parent = Main
+ local UICorner11 = Instance.new('UICorner'); UICorner11.Parent = HideMain
+ local FP = Instance.new('Frame'); FP.Parent = Main
+ local FPButton = Instance.new('TextButton'); FPButton.Parent = FP
+ local UICorner12 = Instance.new('UICorner'); UICorner12.Parent = FPButton
+ local UIStroke6 = Instance.new('UIStroke'); UIStroke6.Parent = FPButton
+ local FPAnchored = Instance.new('TextButton'); FPAnchored.Parent = FP
+ local UICorner13 = Instance.new('UICorner'); UICorner13.Parent = FPAnchored
+ local FPCollide = Instance.new('TextButton'); FPCollide.Parent = FP
+ local UICorner14 = Instance.new('UICorner'); UICorner14.Parent = FPCollide
+ local FPNone = Instance.new('TextButton'); FPNone.Parent = FP
+ local UICorner15 = Instance.new('UICorner'); UICorner15.Parent = FPNone
+ local FPParametr = Instance.new('TextButton'); FPParametr.Parent = FP
+ local UIStroke7 = Instance.new('UIStroke'); UIStroke7.Parent = FPParametr
+ local UICorner16 = Instance.new('UICorner'); UICorner16.Parent = FPParametr
+ local FPHint = Instance.new('TextLabel'); FPHint.Parent = FP
+ local RSV = Instance.new('Frame'); RSV.Parent = Main
+ local EnableRSV = Instance.new('TextButton'); EnableRSV.Parent = RSV
+ local UICorner17 = Instance.new('UICorner'); UICorner17.Parent = EnableRSV
+ local UIStroke8 = Instance.new('UIStroke'); UIStroke8.Parent = EnableRSV
+ local TransparencyRSV = Instance.new('TextBox'); TransparencyRSV.Parent = RSV
+ local UICorner18 = Instance.new('UICorner'); UICorner18.Parent = TransparencyRSV
+ local TransIcon1 = Instance.new('ImageLabel'); TransIcon1.Parent = TransparencyRSV
+ local RGBRSV = Instance.new('Frame'); RGBRSV.Parent = RSV
+ local RedRT1 = Instance.new('TextBox'); RedRT1.Parent = RGBRSV
+ local UICorner19 = Instance.new('UICorner'); UICorner19.Parent = RedRT1
+ local GreenRT1 = Instance.new('TextBox'); GreenRT1.Parent = RGBRSV
+ local UICorner20 = Instance.new('UICorner'); UICorner20.Parent = GreenRT1
+ local BlueRT1 = Instance.new('TextBox'); BlueRT1.Parent = RGBRSV
+ local UICorner21 = Instance.new('UICorner'); UICorner21.Parent = BlueRT1
+ local SizeRSV = Instance.new('TextBox'); SizeRSV.Parent = RSV
+ local UICorner22 = Instance.new('UICorner'); UICorner22.Parent = SizeRSV
+ local SizeIcon = Instance.new('ImageLabel'); SizeIcon.Parent = SizeRSV
+ local HintRSV = Instance.new('TextLabel'); HintRSV.Parent = RSV
+ local InfoButton = Instance.new('TextButton'); InfoButton.Parent = Main
+ local UICorner23 = Instance.new('UICorner'); UICorner23.Parent = InfoButton
+ local UIStroke9 = Instance.new('UIStroke'); UIStroke9.Parent = InfoButton
+ local Info = Instance.new('Frame'); Info.Parent = Main
+ local TextInfo = Instance.new('TextLabel'); TextInfo.Parent = Info
+ local Autor = Instance.new('TextLabel'); Autor.Parent = Info
+ local UICorner24 = Instance.new('UICorner'); UICorner24.Parent = Autor
+ local TextLabel = Instance.new('TextLabel'); TextLabel.Parent = Info
+ local Cap = Instance.new('ImageLabel'); Cap.Parent = Info
+ local UICorner25 = Instance.new('UICorner'); UICorner25.Parent = BabftBetterBuild
+ local ShowMain = Instance.new('ImageButton'); ShowMain.Parent = BabftBetterBuild
+ local UICorner26 = Instance.new('UICorner'); UICorner26.Parent = ShowMain
+ local MoveMain = Instance.new('ImageButton'); MoveMain.Parent = ShowMain
+ 
+ -- Change properies 
+; Main.Size = UDim2.new(0, 455, 0, 277); Main.Name = 'Main'; Main.BackgroundColor3 = Color3.new(1, 1, 1); Main.BackgroundTransparency = 0.800000011920929; Main.BorderColor3 = Color3.new(0, 0, 0); Main.BorderSizePixel = 0
+
+; UIStroke.Thickness = 2.700000047683716
+; Select.Size = UDim2.new(1, 0, 1, 0); Select.Name = 'Select'; Select.BackgroundColor3 = Color3.new(1, 1, 1); Select.BackgroundTransparency = 1; Select.BorderColor3 = Color3.new(0, 0, 0); Select.BorderSizePixel = 0
+; List.Position = UDim2.new(0, 0, 1, 0); List.Size = UDim2.new(1, 0, 0.819999993, 0); List.Name = 'List'; List.AnchorPoint = Vector2.new(0, 1); List.BackgroundColor3 = Color3.new(1, 1, 1); List.BackgroundTransparency = 1; List.BorderColor3 = Color3.new(0, 0, 0); List.BorderSizePixel = 0
+; UIPadding.PaddingBottom = UDim.new(0, 5); UIPadding.PaddingLeft = UDim.new(0, 5); UIPadding.PaddingRight = UDim.new(0, 5); UIPadding.PaddingTop = UDim.new(0, 5)
+; UIGridLayout.CellSize = UDim2.new(0, 90, 0, 60); UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+; OpenRT.Size = UDim2.new(0, 70, 0, 70); OpenRT.Name = 'OpenRT'; OpenRT.Text = 'reduce the thickness of the selection'; OpenRT.BackgroundColor3 = Color3.new(1, 1, 1); OpenRT.BackgroundTransparency = 0.6499999761581421; OpenRT.BorderColor3 = Color3.new(0, 0, 0); OpenRT.BorderSizePixel = 0; OpenRT.Font = Enum.Font.Ubuntu; OpenRT.RichText = true; OpenRT.TextColor3 = Color3.new(0, 0, 0); OpenRT.TextScaled = true; OpenRT.TextSize = 14; OpenRT.TextWrap = true
+; UIStroke1.Name = 'UIStroke1'; UIStroke1.Thickness = 1.600000023841858; UIStroke1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+; UICorner1.Name = 'UICorner1'
+; OpenFP.Size = UDim2.new(0, 70, 0, 70); OpenFP.Name = 'OpenFP'; OpenFP.Text = 'find parts by properties'; OpenFP.BackgroundColor3 = Color3.new(1, 1, 1); OpenFP.BackgroundTransparency = 0.6499999761581421; OpenFP.BorderColor3 = Color3.new(0, 0, 0); OpenFP.BorderSizePixel = 0; OpenFP.Font = Enum.Font.Ubuntu; OpenFP.RichText = true; OpenFP.TextColor3 = Color3.new(0, 0, 0); OpenFP.TextScaled = true; OpenFP.TextSize = 14; OpenFP.TextWrap = true
+; UIStroke2.Name = 'UIStroke2'; UIStroke2.Thickness = 1.600000023841858; UIStroke2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+; UICorner2.Name = 'UICorner2'
+; OpenRSV.Size = UDim2.new(0, 70, 0, 70); OpenRSV.Name = 'OpenRSV'; OpenRSV.Text = 'View rotate step'; OpenRSV.BackgroundColor3 = Color3.new(1, 1, 1); OpenRSV.BackgroundTransparency = 0.6499999761581421; OpenRSV.BorderColor3 = Color3.new(0, 0, 0); OpenRSV.BorderSizePixel = 0; OpenRSV.Font = Enum.Font.Ubuntu; OpenRSV.RichText = true; OpenRSV.TextColor3 = Color3.new(0, 0, 0); OpenRSV.TextScaled = true; OpenRSV.TextSize = 14; OpenRSV.TextWrap = true
+; UIStroke3.Name = 'UIStroke3'; UIStroke3.Thickness = 1.600000023841858; UIStroke3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+; UICorner3.Name = 'UICorner3'
+; RT.Visible = false; RT.Size = UDim2.new(1, 0, 1, 0); RT.Name = 'RT'; RT.BackgroundColor3 = Color3.new(1, 1, 1); RT.BackgroundTransparency = 1; RT.BorderColor3 = Color3.new(0, 0, 0); RT.BorderSizePixel = 0
+; EnableRT.Position = UDim2.new(0.5, 0, 0.225631773, 0); EnableRT.Size = UDim2.new(0.5, 0, -0.0433213003, 50); EnableRT.Name = 'EnableRT'; EnableRT.Text = 'Enabled'; EnableRT.AnchorPoint = Vector2.new(0.5, 0); EnableRT.BackgroundColor3 = Color3.new(1, 0.345098, 0.345098); EnableRT.BackgroundTransparency = 0.4000000059604645; EnableRT.BorderColor3 = Color3.new(0, 0, 0); EnableRT.BorderSizePixel = 0; EnableRT.Font = Enum.Font.Arial; EnableRT.TextColor3 = Color3.new(0, 0, 0); EnableRT.TextScaled = true; EnableRT.TextSize = 14; EnableRT.TextTransparency = 0.4300000071525574; EnableRT.TextWrap = true
+; UICorner4.Name = 'UICorner4'
+; UIStroke4.Name = 'UIStroke4'; UIStroke4.Thickness = 2.700000047683716; UIStroke4.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+; TransparencyRT.Position = UDim2.new(0.752747238, 0, 0.65162456, 0); TransparencyRT.Size = UDim2.new(0, 100, 0, 50); TransparencyRT.Name = 'TransparencyRT'; TransparencyRT.Text = '15'; TransparencyRT.AnchorPoint = Vector2.new(0.5, 0.5); TransparencyRT.BackgroundColor3 = Color3.new(1, 1, 1); TransparencyRT.BackgroundTransparency = 0.6499999761581421; TransparencyRT.BorderColor3 = Color3.new(0, 0, 0); TransparencyRT.BorderSizePixel = 0; TransparencyRT.Font = Enum.Font.SourceSans; TransparencyRT.PlaceholderColor3 = Color3.new(0, 0, 0); TransparencyRT.PlaceholderText = 'Transparency (0-100)'; TransparencyRT.TextColor3 = Color3.new(0, 0, 0); TransparencyRT.TextScaled = true; TransparencyRT.TextSize = 14; TransparencyRT.TextWrap = true
+; UICorner5.Name = 'UICorner5'; UICorner5.CornerRadius = UDim.new(1, 0)
+; TransIcon.Size = UDim2.new(-1.10000002, 158, 1, 0); TransIcon.Name = 'TransIcon'; TransIcon.AnchorPoint = Vector2.new(1, 0); TransIcon.BackgroundColor3 = Color3.new(1, 1, 1); TransIcon.BackgroundTransparency = 1; TransIcon.BorderColor3 = Color3.new(0, 0, 0); TransIcon.BorderSizePixel = 0; TransIcon.Image = 'http://www.roblox.com/asset/?id=6523858394'; TransIcon.ImageTransparency = 0.18000000715255737
+; RGBRT.Position = UDim2.new(0.0395604409, 0, 0.472924173, 0); RGBRT.Size = UDim2.new(0, 173, 0, 100); RGBRT.Name = 'RGBRT'; RGBRT.BackgroundColor3 = Color3.new(1, 1, 1); RGBRT.BackgroundTransparency = 1; RGBRT.BorderColor3 = Color3.new(0, 0, 0); RGBRT.BorderSizePixel = 0
+; RedRT.Size = UDim2.new(0.333000004, 0, 1, 0); RedRT.Name = 'RedRT'; RedRT.Text = '255'; RedRT.BackgroundColor3 = Color3.new(1, 0.0235294, 0.0235294); RedRT.BackgroundTransparency = 0.5; RedRT.BorderColor3 = Color3.new(0, 0, 0); RedRT.BorderSizePixel = 0; RedRT.Font = Enum.Font.Arial; RedRT.PlaceholderText = 'R'; RedRT.TextColor3 = Color3.new(1, 1, 1); RedRT.TextScaled = true; RedRT.TextSize = 14; RedRT.TextWrap = true
+; UICorner6.Name = 'UICorner6'
+; GreenRT.Position = UDim2.new(0.340000004, 0, 0, 0); GreenRT.Size = UDim2.new(0.333000004, 0, 1, 0); GreenRT.Name = 'GreenRT'; GreenRT.Text = '255'; GreenRT.BackgroundColor3 = Color3.new(0, 1, 0.282353); GreenRT.BackgroundTransparency = 0.5; GreenRT.BorderColor3 = Color3.new(0, 0, 0); GreenRT.BorderSizePixel = 0; GreenRT.Font = Enum.Font.Arial; GreenRT.PlaceholderText = 'G'; GreenRT.TextColor3 = Color3.new(1, 1, 1); GreenRT.TextScaled = true; GreenRT.TextSize = 14; GreenRT.TextWrap = true
+; UICorner7.Name = 'UICorner7'
+; BlueRT.Position = UDim2.new(0.680000007, 0, 0, 0); BlueRT.Size = UDim2.new(0.333000004, 0, 1, 0); BlueRT.Name = 'BlueRT'; BlueRT.Text = '255'; BlueRT.BackgroundColor3 = Color3.new(0.235294, 0, 1); BlueRT.BackgroundTransparency = 0.5; BlueRT.BorderColor3 = Color3.new(0, 0, 0); BlueRT.BorderSizePixel = 0; BlueRT.Font = Enum.Font.Arial; BlueRT.PlaceholderText = 'B'; BlueRT.TextColor3 = Color3.new(1, 1, 1); BlueRT.TextScaled = true; BlueRT.TextSize = 14; BlueRT.TextWrap = true
+; UICorner8.Name = 'UICorner8'
+; Title.Position = UDim2.new(0.5, 0, 0, 0); Title.Size = UDim2.new(1, 0, 0, 50); Title.Name = 'Title'; Title.Text = 'Better Build'; Title.AnchorPoint = Vector2.new(0.5, 0); Title.BackgroundColor3 = Color3.new(1, 1, 1); Title.BackgroundTransparency = 1; Title.BorderColor3 = Color3.new(0, 0, 0); Title.BorderSizePixel = 0; Title.Font = Enum.Font.RobotoMono; Title.RichText = true; Title.TextColor3 = Color3.new(0, 0, 0); Title.TextScaled = true; Title.TextSize = 14; Title.TextWrap = true
+; UIStroke5.Name = 'UIStroke5'; UIStroke5.Thickness = 2.700000047683716; UIStroke5.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+; UICorner9.Name = 'UICorner9'
+; Back.Position = UDim2.new(0, 0, 0.877256334, 0); Back.Size = UDim2.new(0, 72, 0, 34); Back.Name = 'Back'; Back.Text = 'Back'; Back.BackgroundColor3 = Color3.new(1, 0.0431373, 0.0431373); Back.BackgroundTransparency = 0.800000011920929; Back.BorderColor3 = Color3.new(0, 0, 0); Back.BorderSizePixel = 0; Back.Font = Enum.Font.SourceSans; Back.TextColor3 = Color3.new(0, 0, 0); Back.TextScaled = true; Back.TextSize = 14; Back.TextTransparency = 0.4000000059604645; Back.TextWrap = true
+; UICorner10.Name = 'UICorner10'
+
+; HideMain.Size = UDim2.new(0, 35, 0, 35); HideMain.Name = 'HideMain'; HideMain.Text = '<'; HideMain.BackgroundColor3 = Color3.new(0.858824, 1, 0.67451); HideMain.BackgroundTransparency = 0.550000011920929; HideMain.BorderColor3 = Color3.new(0, 0, 0); HideMain.BorderSizePixel = 0; HideMain.Font = Enum.Font.SourceSans; HideMain.TextColor3 = Color3.new(0, 0, 0); HideMain.TextScaled = true; HideMain.TextSize = 14; HideMain.TextWrap = true
+; UICorner11.Name = 'UICorner11'
+; FP.Visible = false; FP.Size = UDim2.new(1, 0, 1, 0); FP.Name = 'FP'; FP.BackgroundColor3 = Color3.new(1, 1, 1); FP.BackgroundTransparency = 1; FP.BorderColor3 = Color3.new(0, 0, 0); FP.BorderSizePixel = 0
+; FPButton.Position = UDim2.new(0.600000024, 0, 0.212996393, 0); FPButton.Size = UDim2.new(0, 151, 0, 57); FPButton.Name = 'FPButton'; FPButton.Text = 'Find / Reset'; FPButton.BackgroundColor3 = Color3.new(0.811765, 1, 0.85098); FPButton.BackgroundTransparency = 0.6000000238418579; FPButton.BorderColor3 = Color3.new(0, 0, 0); FPButton.BorderSizePixel = 0; FPButton.Font = Enum.Font.Arial; FPButton.TextColor3 = Color3.new(0, 0, 0); FPButton.TextScaled = true; FPButton.TextSize = 14; FPButton.TextWrap = true
+; UICorner12.Name = 'UICorner12'; UICorner12.CornerRadius = UDim.new(0, 10)
+; UIStroke6.Name = 'UIStroke6'; UIStroke6.Thickness = 2.700000047683716; UIStroke6.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+; FPAnchored.Position = UDim2.new(0.0461538471, 0, 0.223826721, 0); FPAnchored.Size = UDim2.new(0, 200, 0, 50); FPAnchored.Name = 'FPAnchored'; FPAnchored.Text = 'Anchored'; FPAnchored.BackgroundColor3 = Color3.new(1, 1, 1); FPAnchored.BackgroundTransparency = 0.5; FPAnchored.BorderColor3 = Color3.new(0, 0, 0); FPAnchored.BorderSizePixel = 0; FPAnchored.Font = Enum.Font.SourceSans; FPAnchored.TextColor3 = Color3.new(0, 0, 0); FPAnchored.TextScaled = true; FPAnchored.TextSize = 14; FPAnchored.TextWrap = true
+; UICorner13.Name = 'UICorner13'
+; FPCollide.Position = UDim2.new(0.0461538471, 0, 0.440433204, 0); FPCollide.Size = UDim2.new(0, 200, 0, 50); FPCollide.Name = 'FPCollide'; FPCollide.Text = 'Collide'; FPCollide.BackgroundColor3 = Color3.new(1, 1, 1); FPCollide.BackgroundTransparency = 0.5; FPCollide.BorderColor3 = Color3.new(0, 0, 0); FPCollide.BorderSizePixel = 0; FPCollide.Font = Enum.Font.SourceSans; FPCollide.TextColor3 = Color3.new(0, 0, 0); FPCollide.TextScaled = true; FPCollide.TextSize = 14; FPCollide.TextWrap = true
+; UICorner14.Name = 'UICorner14'
+; FPNone.Position = UDim2.new(0.0461538471, 0, 0.657039702, 0); FPNone.Size = UDim2.new(0, 200, 0, 50); FPNone.Name = 'FPNone'; FPNone.Text = 'None'; FPNone.BackgroundColor3 = Color3.new(0.262745, 1, 0.435294); FPNone.BackgroundTransparency = 0.5; FPNone.BorderColor3 = Color3.new(0, 0, 0); FPNone.BorderSizePixel = 0; FPNone.Font = Enum.Font.SourceSans; FPNone.TextColor3 = Color3.new(0, 0, 0); FPNone.TextScaled = true; FPNone.TextSize = 14; FPNone.TextWrap = true
+; UICorner15.Name = 'UICorner15'
+; FPParametr.Position = UDim2.new(0.600000024, 0, 0.476534307, 0); FPParametr.Size = UDim2.new(0, 151, 0, 40); FPParametr.Name = 'FPParametr'; FPParametr.Text = 'True Only'; FPParametr.BackgroundColor3 = Color3.new(1, 1, 1); FPParametr.BackgroundTransparency = 0.550000011920929; FPParametr.BorderColor3 = Color3.new(0, 0, 0); FPParametr.BorderSizePixel = 0; FPParametr.Font = Enum.Font.SourceSans; FPParametr.TextColor3 = Color3.new(0, 0, 0); FPParametr.TextScaled = true; FPParametr.TextSize = 14; FPParametr.TextWrap = true
+; UIStroke7.Name = 'UIStroke7'; UIStroke7.Thickness = 2.4000000953674316; UIStroke7.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+; UICorner16.Name = 'UICorner16'
+; FPHint.Position = UDim2.new(0.545054972, 0, 0.657039702, 0); FPHint.Size = UDim2.new(0, 200, 0, 50); FPHint.Name = 'FPHint'; FPHint.Text = '↑↑↑  \n you can change find parametr'; FPHint.BackgroundColor3 = Color3.new(1, 1, 1); FPHint.BackgroundTransparency = 1; FPHint.BorderColor3 = Color3.new(0, 0, 0); FPHint.BorderSizePixel = 0; FPHint.Font = Enum.Font.SourceSans; FPHint.RichText = true; FPHint.TextColor3 = Color3.new(0, 0, 0); FPHint.TextScaled = true; FPHint.TextSize = 14; FPHint.TextTransparency = 0.6899999976158142; FPHint.TextWrap = true
+; RSV.Visible = false; RSV.Size = UDim2.new(1, 0, 1, 0); RSV.Name = 'RSV'; RSV.BackgroundColor3 = Color3.new(1, 1, 1); RSV.BackgroundTransparency = 1; RSV.BorderColor3 = Color3.new(0, 0, 0); RSV.BorderSizePixel = 0
+; EnableRSV.Position = UDim2.new(0.5, 0, 0.225631773, 0); EnableRSV.Size = UDim2.new(0.5, 0, -0.0433213003, 50); EnableRSV.Name = 'EnableRSV'; EnableRSV.Text = 'Enabled'; EnableRSV.AnchorPoint = Vector2.new(0.5, 0); EnableRSV.BackgroundColor3 = Color3.new(1, 0.345098, 0.345098); EnableRSV.BackgroundTransparency = 0.4000000059604645; EnableRSV.BorderColor3 = Color3.new(0, 0, 0); EnableRSV.BorderSizePixel = 0; EnableRSV.Font = Enum.Font.Arial; EnableRSV.TextColor3 = Color3.new(0, 0, 0); EnableRSV.TextScaled = true; EnableRSV.TextSize = 14; EnableRSV.TextTransparency = 0.4300000071525574; EnableRSV.TextWrap = true
+; UICorner17.Name = 'UICorner17'
+; UIStroke8.Name = 'UIStroke8'; UIStroke8.Thickness = 2.700000047683716; UIStroke8.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+; TransparencyRSV.Position = UDim2.new(0.77692306, 0, 0.5, 0); TransparencyRSV.Size = UDim2.new(0, 100, 0, 50); TransparencyRSV.Name = 'TransparencyRSV'; TransparencyRSV.Text = '80'; TransparencyRSV.AnchorPoint = Vector2.new(0.5, 0.5); TransparencyRSV.BackgroundColor3 = Color3.new(1, 1, 1); TransparencyRSV.BackgroundTransparency = 0.6499999761581421; TransparencyRSV.BorderColor3 = Color3.new(0, 0, 0); TransparencyRSV.BorderSizePixel = 0; TransparencyRSV.Font = Enum.Font.SourceSans; TransparencyRSV.PlaceholderColor3 = Color3.new(0, 0, 0); TransparencyRSV.PlaceholderText = 'Transparency (0-100)'; TransparencyRSV.TextColor3 = Color3.new(0, 0, 0); TransparencyRSV.TextScaled = true; TransparencyRSV.TextSize = 14; TransparencyRSV.TextWrap = true
+; UICorner18.Name = 'UICorner18'; UICorner18.CornerRadius = UDim.new(1, 0)
+; TransIcon1.Size = UDim2.new(-1.10000002, 158, 1, 0); TransIcon1.Name = 'TransIcon1'; TransIcon1.AnchorPoint = Vector2.new(1, 0); TransIcon1.BackgroundColor3 = Color3.new(1, 1, 1); TransIcon1.BackgroundTransparency = 1; TransIcon1.BorderColor3 = Color3.new(0, 0, 0); TransIcon1.BorderSizePixel = 0; TransIcon1.Image = 'http://www.roblox.com/asset/?id=6523858394'; TransIcon1.ImageTransparency = 0.18000000715255737
+; RGBRSV.Position = UDim2.new(0.0395604409, 0, 0.472924173, 0); RGBRSV.Size = UDim2.new(0, 173, 0, 100); RGBRSV.Name = 'RGBRSV'; RGBRSV.BackgroundColor3 = Color3.new(1, 1, 1); RGBRSV.BackgroundTransparency = 1; RGBRSV.BorderColor3 = Color3.new(0, 0, 0); RGBRSV.BorderSizePixel = 0
+; RedRT1.Size = UDim2.new(0.333000004, 0, 1, 0); RedRT1.Name = 'RedRT1'; RedRT1.Text = '255'; RedRT1.BackgroundColor3 = Color3.new(1, 0.0235294, 0.0235294); RedRT1.BackgroundTransparency = 0.5; RedRT1.BorderColor3 = Color3.new(0, 0, 0); RedRT1.BorderSizePixel = 0; RedRT1.Font = Enum.Font.Arial; RedRT1.PlaceholderText = 'R'; RedRT1.TextColor3 = Color3.new(1, 1, 1); RedRT1.TextScaled = true; RedRT1.TextSize = 14; RedRT1.TextWrap = true
+; UICorner19.Name = 'UICorner19'
+; GreenRT1.Position = UDim2.new(0.340000004, 0, 0, 0); GreenRT1.Size = UDim2.new(0.333000004, 0, 1, 0); GreenRT1.Name = 'GreenRT1'; GreenRT1.Text = '255'; GreenRT1.BackgroundColor3 = Color3.new(0, 1, 0.282353); GreenRT1.BackgroundTransparency = 0.5; GreenRT1.BorderColor3 = Color3.new(0, 0, 0); GreenRT1.BorderSizePixel = 0; GreenRT1.Font = Enum.Font.Arial; GreenRT1.PlaceholderText = 'G'; GreenRT1.TextColor3 = Color3.new(1, 1, 1); GreenRT1.TextScaled = true; GreenRT1.TextSize = 14; GreenRT1.TextWrap = true
+; UICorner20.Name = 'UICorner20'
+; BlueRT1.Position = UDim2.new(0.680000007, 0, 0, 0); BlueRT1.Size = UDim2.new(0.333000004, 0, 1, 0); BlueRT1.Name = 'BlueRT1'; BlueRT1.Text = '255'; BlueRT1.BackgroundColor3 = Color3.new(0.235294, 0, 1); BlueRT1.BackgroundTransparency = 0.5; BlueRT1.BorderColor3 = Color3.new(0, 0, 0); BlueRT1.BorderSizePixel = 0; BlueRT1.Font = Enum.Font.Arial; BlueRT1.PlaceholderText = 'B'; BlueRT1.TextColor3 = Color3.new(1, 1, 1); BlueRT1.TextScaled = true; BlueRT1.TextSize = 14; BlueRT1.TextWrap = true
+; UICorner21.Name = 'UICorner21'
+; SizeRSV.Position = UDim2.new(0.77692306, 0, 0.785198569, 0); SizeRSV.Size = UDim2.new(0, 100, 0, 50); SizeRSV.Name = 'SizeRSV'; SizeRSV.Text = '10'; SizeRSV.AnchorPoint = Vector2.new(0.5, 0.5); SizeRSV.BackgroundColor3 = Color3.new(1, 1, 1); SizeRSV.BackgroundTransparency = 0.6499999761581421; SizeRSV.BorderColor3 = Color3.new(0, 0, 0); SizeRSV.BorderSizePixel = 0; SizeRSV.Font = Enum.Font.SourceSans; SizeRSV.PlaceholderColor3 = Color3.new(0, 0, 0); SizeRSV.PlaceholderText = 'Size'; SizeRSV.TextColor3 = Color3.new(0, 0, 0); SizeRSV.TextScaled = true; SizeRSV.TextSize = 14; SizeRSV.TextWrap = true
+; UICorner22.Name = 'UICorner22'; UICorner22.CornerRadius = UDim.new(1, 0)
+; SizeIcon.Size = UDim2.new(-1.10000002, 158, 1, 0); SizeIcon.Name = 'SizeIcon'; SizeIcon.AnchorPoint = Vector2.new(1, 0); SizeIcon.BackgroundColor3 = Color3.new(1, 1, 1); SizeIcon.BackgroundTransparency = 1; SizeIcon.BorderColor3 = Color3.new(0, 0, 0); SizeIcon.BorderSizePixel = 0; SizeIcon.Image = 'rbxassetid://6153965696'; SizeIcon.ImageTransparency = 0.18000000715255737
+; HintRSV.Position = UDim2.new(0.202197805, 0, 0.877256334, 0); HintRSV.Size = UDim2.new(0, 353, 0, 34); HintRSV.Name = 'HintRSV'; HintRSV.Text = 'The steps will only be shown if you have specified an integer and a number less than 360 and divisible by 360 in the size of the rotation'; HintRSV.BackgroundColor3 = Color3.new(1, 1, 1); HintRSV.BackgroundTransparency = 1; HintRSV.BorderColor3 = Color3.new(0, 0, 0); HintRSV.BorderSizePixel = 0; HintRSV.Font = Enum.Font.Unknown; HintRSV.TextColor3 = Color3.new(0, 0, 0); HintRSV.TextScaled = true; HintRSV.TextSize = 14; HintRSV.TextTransparency = 0.33000001311302185; HintRSV.TextWrap = true
+; InfoButton.Position = UDim2.new(0.819780231, 0, 0, 0); InfoButton.Size = UDim2.new(0, 82, 0, 26); InfoButton.Name = 'InfoButton'; InfoButton.Text = 'Info'; InfoButton.BackgroundColor3 = Color3.new(0.596078, 1, 0.607843); InfoButton.BackgroundTransparency = 0.8500000238418579; InfoButton.BorderColor3 = Color3.new(0, 0, 0); InfoButton.BorderSizePixel = 0; InfoButton.Font = Enum.Font.Unknown; InfoButton.TextColor3 = Color3.new(0, 0, 0); InfoButton.TextScaled = true; InfoButton.TextSize = 1; InfoButton.TextWrap = true
+; UICorner23.Name = 'UICorner23'
+; UIStroke9.Name = 'UIStroke9'; UIStroke9.Thickness = 2.4000000953674316; UIStroke9.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+; Info.Position = UDim2.new(0, 0, 0.194945842, 0); Info.Visible = false; Info.Size = UDim2.new(0, 455, 0, 223); Info.Name = 'Info'; Info.BackgroundColor3 = Color3.new(1, 1, 1); Info.BackgroundTransparency = 1; Info.BorderColor3 = Color3.new(0, 0, 0); Info.BorderSizePixel = 0
+; TextInfo.Position = UDim2.new(0.041758243, 0, 0.0269058291, 0); TextInfo.Size = UDim2.new(0, 417, 0, 135); TextInfo.Name = 'TextInfo'; TextInfo.Text = 'This script improves the Building in the BABFT game, and you should know that this script does not spoil the gameplay in any way, but only affects the building, so if you use this script, you are not considered a bad player.'; TextInfo.BackgroundColor3 = Color3.new(1, 1, 1); TextInfo.BackgroundTransparency = 1; TextInfo.BorderColor3 = Color3.new(0, 0, 0); TextInfo.BorderSizePixel = 0; TextInfo.Font = Enum.Font.Unknown; TextInfo.TextColor3 = Color3.new(0, 0, 0); TextInfo.TextScaled = true; TextInfo.TextSize = 14; TextInfo.TextWrap = true
+; Autor.Position = UDim2.new(0.353846163, 0, 0.600896835, 0); Autor.Size = UDim2.new(0, 133, 0, 30); Autor.Name = 'Autor'; Autor.Text = 'script by Azzikx'; Autor.BackgroundColor3 = Color3.new(1, 1, 1); Autor.BackgroundTransparency = 0.75; Autor.BorderColor3 = Color3.new(0, 0, 0); Autor.BorderSizePixel = 0; Autor.Font = Enum.Font.Cartoon; Autor.TextColor3 = Color3.new(0, 0, 0); Autor.TextScaled = true; Autor.TextSize = 14; Autor.TextWrap = true
+; UICorner24.Name = 'UICorner24'
+; TextLabel.Position = UDim2.new(0.839560449, 0, 0.923766792, 0); TextLabel.Size = UDim2.new(0, 73, 0, 17); TextLabel.Text = '2025'; TextLabel.BackgroundColor3 = Color3.new(1, 1, 1); TextLabel.BackgroundTransparency = 1; TextLabel.BorderColor3 = Color3.new(0, 0, 0); TextLabel.BorderSizePixel = 0; TextLabel.Font = Enum.Font.SourceSans; TextLabel.TextColor3 = Color3.new(0, 0, 0); TextLabel.TextScaled = true; TextLabel.TextSize = 14; TextLabel.TextWrap = true
+; Cap.Position = UDim2.new(0.426373631, 0, 0.735426009, 0); Cap.Size = UDim2.new(0, 67, 0, 59); Cap.Name = 'Cap'; Cap.BackgroundColor3 = Color3.new(1, 1, 1); Cap.BackgroundTransparency = 1; Cap.BorderColor3 = Color3.new(0, 0, 0); Cap.BorderSizePixel = 0; Cap.Image = 'rbxassetid://92226641878334'; Cap.ImageTransparency = 0.5099999904632568; Cap.ScaleType = Enum.ScaleType.Fit
+; UICorner25.Name = 'UICorner25'
+; ShowMain.Visible = false; ShowMain.Size = UDim2.new(0, 50, 0, 50); ShowMain.Name = 'ShowMain'; ShowMain.BackgroundColor3 = Color3.new(1, 1, 1); ShowMain.BackgroundTransparency = 1; ShowMain.BorderColor3 = Color3.new(0, 0, 0); ShowMain.BorderSizePixel = 0; ShowMain.Image = 'http://www.roblox.com/asset/?id=88742005951573'
+; UICorner26.Name = 'UICorner26'; UICorner26.CornerRadius = UDim.new(0, 10)
+; MoveMain.Position = UDim2.new(0, 0, 1, 0); MoveMain.Size = UDim2.new(1, 0, 0.5, 0); MoveMain.Active = false; MoveMain.Name = 'MoveMain'; MoveMain.BackgroundColor3 = Color3.new(1, 1, 1); MoveMain.BackgroundTransparency = 0.3499999940395355; MoveMain.BorderColor3 = Color3.new(0, 0, 0); MoveMain.BorderSizePixel = 0; MoveMain.Selectable = false; MoveMain.Image = 'http://www.roblox.com/asset/?id=1467771384'; MoveMain.ScaleType = Enum.ScaleType.Fit
+
+BabftBetterBuild.ResetOnSpawn = false
+
+local Plr = game.Players.LocalPlayer
+local PlrGui : PlayerGui = Plr:FindFirstChild("PlayerGui")
+local Mouse = Plr:GetMouse()
+
+local BlocksFolder = workspace.Blocks:FindFirstChild(Plr.Name)
+local Blocks = {}
+
+local WhiteCol = Color3.new(255, 255, 255)
+local TrueCol = Color3.new(0.262745, 1, 0.435294)
+local FalseCol = Color3.new(1, 0.113725, 0.129412)
+local CurrentOpen = Select 
+
+function Open(FTO)
+	CurrentOpen.Visible = false
+	CurrentOpen = FTO
+
+	FTO.Visible = true
+	Back.Visible = true
+	Back.MouseButton1Click:Once(function()
+		Open(Select)
+	end)
+end
+function HideMainF(boolean)
+	if boolean then
+		ShowMain.Position = Main.Position
+	else
+		Main.Position = ShowMain.Position
+	end
+	Main.Visible = not boolean
+	ShowMain.Visible = boolean
+end
+HideMain.MouseButton1Click:Connect(function() HideMainF(true) end)
+ShowMain.MouseButton1Click:Connect(function() HideMainF(false) end)
+
+MoveMain.MouseButton1Down:Connect(function()
+	local deb = true
+	MoveMain.MouseButton1Up:Once(function() deb = false end)
+	repeat
+		ShowMain.Position = UDim2.fromOffset(Mouse.X - 20 , Mouse.Y - 60)
+		task.wait()
+	until deb == false
+end)
+
+for i, v in pairs(List:GetChildren()) do
+	if v:IsA("TextButton") then
+		local FrameToOpen = Main:WaitForChild(string.sub(v.Name, 5, string.len(v.Name)))
+		v.MouseButton1Click:Connect(function()
+			Open(FrameToOpen)
+		end)
+	end
+end
+Main.InfoButton.MouseButton1Click:Connect(function() Open(Main.Info) end)
+local function CorrectNum(Num, Max)
+	local Num = tonumber(Num)
+	if Num then
+		math.clamp(Num, 0, Max)
+		return Num
+	else 
+		return Max
+	end
+end
+----------------------------==R-T==--------------------------
+local RTOptions = {
+	Enabled = false,
+	R = 255, G = 255, B = 255,
+	Transparency = 0
+}
+
+for i, v : TextBox in pairs(RGBRT:GetChildren()) do
+	local Color = string.sub(v.Name, 1, 1)
+	v.Changed:Connect(function()
+		RTOptions[Color] = CorrectNum(v.Text, 255)
+	end)
+end
+RT.TransparencyRT.Changed:Connect(function()
+	RTOptions.Transparency = CorrectNum(RT.TransparencyRT.Text, 100)
+end)
+EnableRT.MouseButton1Click:Connect(function()
+	RTOptions.Enabled = not RTOptions.Enabled
+	if RTOptions.Enabled then
+		EnableRT.BackgroundColor3 = TrueCol
+	else
+		EnableRT.BackgroundColor3 = FalseCol
+	end
+end)
+
+BlocksFolder.ChildAdded:Connect(function (obj)
+	obj.ChildAdded:Connect(function (Box)
+		if string.find(Box.Name, "SB") and RTOptions.Enabled then
+			Box.LineThickness = 0.02
+			Box.Color3 = Color3.fromRGB(RTOptions.R, RTOptions.G, RTOptions.B)
+			Box.Transparency = RTOptions.Transparency / 100
+		end
+	end)
+end)
+workspace.ChildAdded:Connect(function(obj)
+	if obj.Name == "TrowelBoundingBox" and RTOptions.Enabled then
+		local SB = obj:WaitForChild("SelectionBox")
+		SB.Transparency = 0.6
+	end
+end)
+-------------== FP ==-----------------
+local BlocksFolder = workspace.Blocks:WaitForChild(Plr.Name)
+
+local Parametrs = {"True Only", "False Only", "True and False"}
+local CurrentPar = 1
+local FindType = "None"
+FPParametr.MouseButton1Click:Connect(function()
+	CurrentPar += 1
+	if Parametrs[CurrentPar] == nil then
+		CurrentPar = 1
+	end
+	FPParametr.Text = Parametrs[CurrentPar]
+end)
+
+local function SelectType(Button : TextButton)
+	FPAnchored.BackgroundColor3 = WhiteCol
+	FPCollide.BackgroundColor3 = WhiteCol
+	FPNone.BackgroundColor3 = WhiteCol
+	
+	Button.BackgroundColor3 = TrueCol
+end
+FPAnchored.MouseButton1Click:Connect(function() FindType = "Anchored"; SelectType(FPAnchored) end)
+FPCollide.MouseButton1Click:Connect(function() FindType = "CanCollide"; SelectType(FPCollide) end)
+FPNone.MouseButton1Click:Connect(function() FindType = "None"; SelectType(FPNone) end)
+
+local HLFolder = Instance.new("Folder", FP)
+local HLFind = Instance.new("SelectionBox")
+HLFind.SurfaceTransparency = 0.3
+HLFind.Transparency = 1
+
+local function ShowBlocks()
+	for i, v in pairs(BlocksFolder:GetChildren()) do
+		local Trans = v:GetAttribute("StartT")
+		if Trans ~= nil and Trans ~= "None" then
+			v.PPart.Transparency = Trans
+			v:SetAttribute("StartT", "None")
+		end
+	end
+	--[[local Teams = workspace:FindFirstChild("Teams")
+	if not Teams then return end
+	for i, v in pairs(Teams:FindFirstChild(tostring(Plr.TeamColor).."Team"):FindFirstChild("ZoneCoverParts"):GetChildren()) do
+		v.Transparency = 0	
+	end]]
+end
+local function HideBlocks()
+	for i, v in pairs(BlocksFolder:GetChildren()) do
+		if v:GetAttribute("StartT") == nil or v:GetAttribute("StartT") == "None" then
+			v:SetAttribute("StartT", v.PPart.Transparency)
+		end
+		v.PPart.Transparency = 0.2
+	end
+	--[[local Teams = workspace:FindFirstChild("Teams")
+	if not Teams then return end
+	for i, v in pairs(Teams:FindFirstChild(tostring(Plr.TeamColor).."Team"):FindFirstChild("ZoneCoverParts"):GetChildren()) do
+		v.Transparency = 0.15
+	end]]
+end
+
+FPButton.MouseButton1Click:Connect(function()
+	HLFolder:ClearAllChildren()
+	if FindType == "None" then 
+		ShowBlocks()
+		return
+	end
+	HideBlocks()
+	for i, v in pairs(BlocksFolder:GetChildren()) do
+		if CurrentPar == 1 or CurrentPar == 3 then
+			if v.PPart[FindType] == true then
+				local HL = HLFind:Clone()
+				HL.SurfaceColor3 = TrueCol
+				HL.Adornee = v.PPart
+				HL.Parent = HLFolder
+			end
+		end
+		if CurrentPar == 2 or CurrentPar == 3 then
+			if v.PPart[FindType] == false then
+				local HL = HLFind:Clone()
+				HL.SurfaceColor3 = FalseCol
+				HL.Adornee = v.PPart
+				HL.Parent = HLFolder
+			end
+		end
+	end
+end)
+--------==RSV==-----
+local RSVOptions = {
+	Enabled = false,
+	R = 255, G = 255, B = 255,
+	Transparency = 80, Size = 10
+}
+
+for i, v : TextBox in pairs(RGBRSV:GetChildren()) do
+	local Color = string.sub(v.Name, 1, 1)
+	v.Changed:Connect(function()
+		RSVOptions[Color] = CorrectNum(v.Text, 255)
+	end)
+end
+TransparencyRSV.Changed:Connect(function()
+	RSVOptions.Transparency = CorrectNum(TransparencyRSV.Text, 100)
+end)
+SizeRSV.Changed:Connect(function()
+	RSVOptions.Size = CorrectNum(SizeRSV.Text, 1000)
+end)
+EnableRSV.MouseButton1Click:Connect(function()
+	RSVOptions.Enabled = not RSVOptions.Enabled
+	if RSVOptions.Enabled then
+		EnableRSV.BackgroundColor3 = TrueCol
+	else
+		EnableRSV.BackgroundColor3 = FalseCol
+	end
+end)
+local TempParts = Instance.new("Folder", workspace)
+TempParts.Name = "TempParts"
+local EAxis = Enum.Axis
+
+local GBB = Instance.new("BillboardGui")
+GBB.Size = UDim2.fromOffset(100, 50)
+GBB.AlwaysOnTop = true
+local Gradus = Instance.new("TextLabel", GBB)
+Gradus.Size = UDim2.fromScale(1, 1)
+Gradus.BackgroundTransparency = 1
+Gradus.TextScaled = true
+Gradus.TextStrokeTransparency = 0
+Gradus.TextStrokeColor3 = Color3.new(1, 1, 1)
+
+local function CeilVector(Vector : Vector3)
+	return Vector3.new(math.round(Vector.X), math.round(Vector.Y), math.round(Vector.Z))
+end
+
+local CurrentHandle = nil
+PlrGui.ChildAdded:Connect(function(obj)
+	if not obj:IsA("ArcHandles") or not RSVOptions.Enabled or obj == CurrentHandle then return end
+	local RotHandle : ArcHandles = obj
+	CurrentHandle = obj
+	
+	local d = RotHandle.MouseButton1Up:Connect(function() GBB.Parent = script; ShowBlocks(); TempParts:ClearAllChildren() end)
+	local c = RotHandle.MouseButton1Down:Connect(function(Axis)
+		GBB.Parent = script
+		TempParts:ClearAllChildren()
+		--local Scale = 2
+		local Scale = tonumber(PlrGui.TrowelToolDisplayGui.ModeImage.More.Scale.TextBox.Text)
+		if Scale < 1 or Scale > 360 or Scale ~= math.round(Scale) or 360 % Scale ~= 0 then return end
+		HideBlocks()
+		local StepPart = Instance.new("Part")
+		StepPart.Color = Color3.fromRGB(RSVOptions.R, RSVOptions.G, RSVOptions.B)
+		StepPart.Transparency = RSVOptions.Transparency / 100
+		StepPart.Anchored = true
+		StepPart.CanCollide = false
+		StepPart.CanQuery = false
+		local TBB = game.Workspace:WaitForChild("TrowelBoundingBox")
+		
+		StepPart.Orientation = TBB.Orientation
+		StepPart.Position = TBB.Position
+		StepPart.Size = Vector3.new(0.05, RSVOptions.Size, 0.05)
+		
+		local Step = 0
+		if Axis.Name == "Y" then
+			StepPart.Size = Vector3.new(RSVOptions.Size, 0.05, 0.05)
+			StepPart.Position = TBB.Position
+			Step = Vector3.new(0, Scale, 0)
+		elseif Axis.Name == "X" then
+			Step = Vector3.new(Scale, 0, 0)
+		elseif Axis.Name == "Z" then
+			Step = Vector3.new(0, 0, Scale)
+		end
+		for i = 0, (360 / Scale) - 1 do
+			local StepClone = StepPart:Clone()
+			local NewStep = Step * i
+			StepClone.CFrame *= CFrame.Angles(math.rad(NewStep.X), math.rad(NewStep.Y), math.rad(NewStep.Z))
+			
+			if i % 2 == 0 then
+				if Axis.Name ~= "Y" then
+					StepClone.Size -= Vector3.new(0, RSVOptions.Size / 15,0)
+				else
+					StepClone.Size -= Vector3.new(RSVOptions.Size / 15,0,0)
+				end
+			end
+			
+			local AcSize
+			if Axis.Name ~= "Y" then
+				AcSize = CFrame.new(0, StepClone.Size.Y / 2, 0)
+			else
+				AcSize = CFrame.new(StepClone.Size.X / 2, 0, 0)
+			end
+			StepClone.CFrame *= AcSize
+			
+			if i == 0 then
+				StepClone.BrickColor = BrickColor.Red()
+				StepClone.Material = "Neon"
+			end
+			StepClone.Parent = TempParts
+			
+			local f = TBB.Changed:Connect(function(prop)
+				if CeilVector(TBB.Orientation) == CeilVector(StepClone.Orientation) then
+					GBB.Parent = StepClone
+					Gradus.Text = tostring(Step[Axis.Name] * i) .. "°"
+					StepClone.Material = "Neon"
+				else
+					StepClone.Material = "Plastic"
+				end
+			end)
+			StepClone.Destroying:Once(function() f:Disconnect() end)
+		end
+	end)
+	RotHandle.Destroying:Connect(function()
+		GBB.Parent = script
+		TempParts:ClearAllChildren()
+		ShowBlocks()
+		d:Disconnect()
+		c:Disconnect()
+	end)
+end)
+--
+BabftBetterBuild.Destroying:Connect(function()
+	script:Destroy()
+end)

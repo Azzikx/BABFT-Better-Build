@@ -1,5 +1,5 @@
 ### BABFTBetterBuild
-lua script to roblox game "Build A Boat For Treasure" \n
+lua script to roblox game "Build A Boat For Treasure"
 
 **execute this line:**
 ```lua

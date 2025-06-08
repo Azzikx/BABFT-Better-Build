@@ -6,5 +6,5 @@ lua script to roblox game "Build A Boat For Treasure" \n
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Azzikx/BABFTBetterBuild/refs/heads/main/SourceCode"))()
 ```
 
-## --==Version History==--
+## **--==Version History==--**
 None

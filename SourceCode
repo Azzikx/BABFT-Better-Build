@@ -1,3 +1,7 @@
+--Script by Azzikx
+--2025
+
+
 --Destroying old gui 
  local OldGui = game.Players.LocalPlayer.PlayerGui:FindFirstChild('BabftBetterBuild'); if OldGui then OldGui:Destroy() end
  local BabftBetterBuild = Instance.new('ScreenGui', game.Players.LocalPlayer.PlayerGui) 

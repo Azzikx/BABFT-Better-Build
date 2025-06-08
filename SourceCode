@@ -85,11 +85,18 @@
  local TextInfo = Instance.new('TextLabel'); TextInfo.Parent = Info
  local Autor = Instance.new('TextLabel'); Autor.Parent = Info
  local UICorner24 = Instance.new('UICorner'); UICorner24.Parent = Autor
- local TextLabel = Instance.new('TextLabel'); TextLabel.Parent = Info
  local Cap = Instance.new('ImageLabel'); Cap.Parent = Info
- local UICorner25 = Instance.new('UICorner'); UICorner25.Parent = BabftBetterBuild
+ local Version = Instance.new('TextLabel'); Version.Parent = Info
+ local VersionWarning = Instance.new('Frame'); VersionWarning.Parent = Main
+ local Warning = Instance.new('TextLabel'); Warning.Parent = VersionWarning
+ local Link = Instance.new('TextBox'); Link.Parent = VersionWarning
+ local Continue = Instance.new('TextButton'); Continue.Parent = VersionWarning
+ local UIStroke10 = Instance.new('UIStroke'); UIStroke10.Parent = Continue
+ local UICorner25 = Instance.new('UICorner'); UICorner25.Parent = Continue
+ local Hint = Instance.new('TextLabel'); Hint.Parent = VersionWarning
+ local UICorner26 = Instance.new('UICorner'); UICorner26.Parent = BabftBetterBuild
  local ShowMain = Instance.new('ImageButton'); ShowMain.Parent = BabftBetterBuild
- local UICorner26 = Instance.new('UICorner'); UICorner26.Parent = ShowMain
+ local UICorner27 = Instance.new('UICorner'); UICorner27.Parent = ShowMain
  local MoveMain = Instance.new('ImageButton'); MoveMain.Parent = ShowMain
  
  -- Change properies 
@@ -170,18 +177,27 @@
 ; TextInfo.Position = UDim2.new(0.041758243, 0, 0.0269058291, 0); TextInfo.Size = UDim2.new(0, 417, 0, 135); TextInfo.Name = 'TextInfo'; TextInfo.Text = 'This script improves the Building in the BABFT game, and you should know that this script does not spoil the gameplay in any way, but only affects the building, so if you use this script, you are not considered a bad player.'; TextInfo.BackgroundColor3 = Color3.new(1, 1, 1); TextInfo.BackgroundTransparency = 1; TextInfo.BorderColor3 = Color3.new(0, 0, 0); TextInfo.BorderSizePixel = 0; TextInfo.Font = Enum.Font.Unknown; TextInfo.TextColor3 = Color3.new(0, 0, 0); TextInfo.TextScaled = true; TextInfo.TextSize = 14; TextInfo.TextWrap = true
 ; Autor.Position = UDim2.new(0.353846163, 0, 0.600896835, 0); Autor.Size = UDim2.new(0, 133, 0, 30); Autor.Name = 'Autor'; Autor.Text = 'script by Azzikx'; Autor.BackgroundColor3 = Color3.new(1, 1, 1); Autor.BackgroundTransparency = 0.75; Autor.BorderColor3 = Color3.new(0, 0, 0); Autor.BorderSizePixel = 0; Autor.Font = Enum.Font.Cartoon; Autor.TextColor3 = Color3.new(0, 0, 0); Autor.TextScaled = true; Autor.TextSize = 14; Autor.TextWrap = true
 ; UICorner24.Name = 'UICorner24'
-; TextLabel.Position = UDim2.new(0.839560449, 0, 0.923766792, 0); TextLabel.Size = UDim2.new(0, 73, 0, 17); TextLabel.Text = '2025'; TextLabel.BackgroundColor3 = Color3.new(1, 1, 1); TextLabel.BackgroundTransparency = 1; TextLabel.BorderColor3 = Color3.new(0, 0, 0); TextLabel.BorderSizePixel = 0; TextLabel.Font = Enum.Font.SourceSans; TextLabel.TextColor3 = Color3.new(0, 0, 0); TextLabel.TextScaled = true; TextLabel.TextSize = 14; TextLabel.TextWrap = true
 ; Cap.Position = UDim2.new(0.426373631, 0, 0.735426009, 0); Cap.Size = UDim2.new(0, 67, 0, 59); Cap.Name = 'Cap'; Cap.BackgroundColor3 = Color3.new(1, 1, 1); Cap.BackgroundTransparency = 1; Cap.BorderColor3 = Color3.new(0, 0, 0); Cap.BorderSizePixel = 0; Cap.Image = 'rbxassetid://92226641878334'; Cap.ImageTransparency = 0.5099999904632568; Cap.ScaleType = Enum.ScaleType.Fit
+; Version.Position = UDim2.new(0.657142878, 0, 0.9147982, 0); Version.Size = UDim2.new(0, 156, 0, 19); Version.Name = 'Version'; Version.Text = 'Version: '; Version.BackgroundColor3 = Color3.new(1, 1, 1); Version.BackgroundTransparency = 1; Version.BorderColor3 = Color3.new(0, 0, 0); Version.BorderSizePixel = 0; Version.Font = Enum.Font.SourceSans; Version.TextColor3 = Color3.new(0, 0, 0); Version.TextScaled = true; Version.TextSize = 14; Version.TextWrap = true; Version.TextXAlignment = Enum.TextXAlignment.Right
+; VersionWarning.Visible = false; VersionWarning.Size = UDim2.new(0, 455, 0, 277); VersionWarning.Name = 'VersionWarning'; VersionWarning.BackgroundColor3 = Color3.new(1, 1, 1); VersionWarning.BackgroundTransparency = 1; VersionWarning.BorderColor3 = Color3.new(0, 0, 0); VersionWarning.BorderSizePixel = 0
+; Warning.Position = UDim2.new(0.0439560451, 0, 0.2449819, 0); Warning.Size = UDim2.new(0, 414, 0, 101); Warning.Name = 'Warning'; Warning.Text = 'Your version: 1.0 Alpha New Version: 1.0 Alpha'; Warning.BackgroundColor3 = Color3.new(1, 1, 1); Warning.BackgroundTransparency = 1; Warning.BorderColor3 = Color3.new(0, 0, 0); Warning.BorderSizePixel = 0; Warning.Font = Enum.Font.RobotoCondensed; Warning.RichText = true; Warning.TextColor3 = Color3.new(0, 0, 0); Warning.TextScaled = true; Warning.TextSize = 14; Warning.TextTransparency = 0.25999999046325684; Warning.TextWrap = true
+; Link.Position = UDim2.new(0.0439560451, 0, 0.685920596, 0); Link.Size = UDim2.new(0, 414, 0, 28); Link.Name = 'Link'; Link.Text = 'hassjaa'; Link.BackgroundColor3 = Color3.new(1, 1, 1); Link.BackgroundTransparency = 0.8999999761581421; Link.BorderColor3 = Color3.new(0, 0, 0); Link.BorderSizePixel = 0; Link.Font = Enum.Font.SourceSans; Link.TextColor3 = Color3.new(0, 0, 0); Link.TextScaled = true; Link.TextSize = 14; Link.TextWrap = true
+; Continue.Position = UDim2.new(0.305696219, 0, 0.819895744, 0); Continue.Size = UDim2.new(0, 200, 0, 40); Continue.Name = 'Continue'; Continue.Text = 'Continue with the old version'; Continue.BackgroundColor3 = Color3.new(1, 0.109804, 0.301961); Continue.BackgroundTransparency = 0.699999988079071; Continue.BorderColor3 = Color3.new(0, 0, 0); Continue.BorderSizePixel = 0; Continue.Font = Enum.Font.Code; Continue.TextColor3 = Color3.new(0, 0, 0); Continue.TextScaled = true; Continue.TextSize = 14; Continue.TextTransparency = 0.49000000953674316; Continue.TextWrap = true
+; UIStroke10.Name = 'UIStroke10'; UIStroke10.Thickness = 2.4000000953674316; UIStroke10.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 ; UICorner25.Name = 'UICorner25'
+; Hint.Position = UDim2.new(0.0439560451, 0, 0.606498182, 0); Hint.Size = UDim2.new(0, 414, 0, 22); Hint.Name = 'Hint'; Hint.Text = ''; Hint.BackgroundColor3 = Color3.new(1, 1, 1); Hint.BackgroundTransparency = 0.6499999761581421; Hint.BorderColor3 = Color3.new(0, 0, 0); Hint.BorderSizePixel = 0; Hint.Font = Enum.Font.SourceSans; Hint.TextColor3 = Color3.new(0, 0, 0); Hint.TextScaled = true; Hint.TextSize = 14; Hint.TextWrap = true
+; UICorner26.Name = 'UICorner26'
 ; ShowMain.Visible = false; ShowMain.Size = UDim2.new(0, 50, 0, 50); ShowMain.Name = 'ShowMain'; ShowMain.BackgroundColor3 = Color3.new(1, 1, 1); ShowMain.BackgroundTransparency = 1; ShowMain.BorderColor3 = Color3.new(0, 0, 0); ShowMain.BorderSizePixel = 0; ShowMain.Image = 'http://www.roblox.com/asset/?id=88742005951573'
-; UICorner26.Name = 'UICorner26'; UICorner26.CornerRadius = UDim.new(0, 10)
+; UICorner27.Name = 'UICorner27'; UICorner27.CornerRadius = UDim.new(0, 10)
 ; MoveMain.Position = UDim2.new(0, 0, 1, 0); MoveMain.Size = UDim2.new(1, 0, 0.5, 0); MoveMain.Active = false; MoveMain.Name = 'MoveMain'; MoveMain.BackgroundColor3 = Color3.new(1, 1, 1); MoveMain.BackgroundTransparency = 0.3499999940395355; MoveMain.BorderColor3 = Color3.new(0, 0, 0); MoveMain.BorderSizePixel = 0; MoveMain.Selectable = false; MoveMain.Image = 'http://www.roblox.com/asset/?id=1467771384'; MoveMain.ScaleType = Enum.ScaleType.Fit
 
+--script
 BabftBetterBuild.ResetOnSpawn = false
 
 local Plr = game.Players.LocalPlayer
 local PlrGui : PlayerGui = Plr:FindFirstChild("PlayerGui")
 local Mouse = Plr:GetMouse()
+local HttpService = game:GetService("HttpService")
 
 local BlocksFolder = workspace.Blocks:FindFirstChild(Plr.Name)
 local Blocks = {}
@@ -190,6 +206,40 @@ local WhiteCol = Color3.new(255, 255, 255)
 local TrueCol = Color3.new(0.262745, 1, 0.435294)
 local FalseCol = Color3.new(1, 0.113725, 0.129412)
 local CurrentOpen = Select 
+
+local Curversion = 0.3
+local CurPerfix = "Alpha"
+local Version = game:HttpGet("https://raw.githubusercontent.com/Azzikx/BABFTBetterBuild/refs/heads/main/Version")
+local EnVersion = HttpService:JSONDecode(Version)
+if Curversion < EnVersion["Version"] or CurPerfix ~= EnVersion["Perfix"] then
+	Select.Visible = false
+	HideMain.Visible = false
+	InfoButton.Visible = false
+	Back.Visible = false
+	
+	VersionWarning.Visible = true
+	Title.Text = "The old version has been detected!"
+	
+	VersionWarning.Warning.Text = string.format('<font color="rgb(255,0,0)">%s</font>', "Your version: "..tostring(Curversion).." "..CurPerfix)
+	VersionWarning.Warning.Text ..= string.format('<font color="rgb(0,255,0)">%s</font>', "\n New version: "..tostring(EnVersion["Version"]).." "..EnVersion["Perfix"])
+	VersionWarning.Hint.Text = "Open the ".."link".." to get the new version:"
+	local State = false
+	VersionWarning.Continue.MouseButton1Click:Once(function() State = true end)
+	repeat
+		VersionWarning.Link.Text = EnVersion["Link"]
+		task.wait()
+	until State
+	Select.Visible = true
+	HideMain.Visible = true
+	InfoButton.Visible = true
+	Back.Visible = true
+
+	VersionWarning.Visible = false
+	Title.Text = "Better Build"
+
+end
+Info.Version.Text = tostring(Curversion).." "..CurPerfix
+VersionWarning:Destroy()
 
 function Open(FTO)
 	CurrentOpen.Visible = false
@@ -419,8 +469,8 @@ PlrGui.ChildAdded:Connect(function(obj)
 	local c = RotHandle.MouseButton1Down:Connect(function(Axis)
 		GBB.Parent = script
 		TempParts:ClearAllChildren()
-		--local Scale = 2
-		local Scale = tonumber(PlrGui.TrowelToolDisplayGui.ModeImage.More.Scale.TextBox.Text)
+		local Scale = 2
+		--local Scale = tonumber(PlrGui.TrowelToolDisplayGui.ModeImage.More.Scale.TextBox.Text)
 		if Scale < 1 or Scale > 360 or Scale ~= math.round(Scale) or 360 % Scale ~= 0 then return end
 		HideBlocks()
 		local StepPart = Instance.new("Part")

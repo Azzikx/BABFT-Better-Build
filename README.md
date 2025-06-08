@@ -1,4 +1,4 @@
-### BABFTBetterBuild
+### Build A Boat For Treasure BetterBuild
 lua script to roblox game "Build A Boat For Treasure"
 
 **execute this line:**

@@ -1,6 +1,6 @@
 --Script by Azzikx
 --2025
-
+--Please do not steal or modify the code!
 
 --Destroying old gui 
  local OldGui = game.Players.LocalPlayer.PlayerGui:FindFirstChild('BabftBetterBuild'); if OldGui then OldGui:Destroy() end

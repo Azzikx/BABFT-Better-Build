@@ -5,6 +5,6 @@ lua script to roblox game "Build A Boat For Treasure"
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Azzikx/BABFTBetterBuild/refs/heads/main/SourceCode"))()
 ```
-> The last update was on June 8, 2025 (0.3 Aplha)
+> The last update was on June 8, 2025 (0.3 Alpha)
 ## **--==Version History==--**
 None

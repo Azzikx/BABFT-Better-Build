@@ -7,4 +7,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Azzikx/BABFTBetterBui
 ```
 > The last update was on June 8, 2025 (0.3 Alpha)
 ## **--==Version History==--**
-None
+> ↓ 0.3 Alpha ↓
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Azzikx/BABFT-Better-Build/refs/heads/main/Versions/03Alpha"))()
+```

@@ -1,5 +1,5 @@
 ## Build A Boat For Treasure BetterBuild
-lua script to roblox game "Build A Boat For Treasure"
+lua script to roblox game "Build A Boat For Treasure" with open source
 
 # **↓ execute this line ↓**
 ```lua

@@ -1,8 +1,9 @@
 ## Build A Boat For Treasure BetterBuild
+> [!IMPORTANT]
+> I've changed and I don't write scripts for exploiting anymore ;)
+
 lua script to roblox game "Build A Boat For Treasure" with open source
 
-> [!IMPORTANT]
->Unfortunately, updates will not be released until roblox ban wave ends
 # **↓ execute this line ↓**
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Azzikx/BABFTBetterBuild/refs/heads/main/SourceCode"))()

@@ -1,6 +1,7 @@
 ## Build A Boat For Treasure BetterBuild
 > [!IMPORTANT]
 > I've changed and I don't write scripts for exploiting anymore ;)
+> The script will no longer be updated
 
 lua script to roblox game "Build A Boat For Treasure" with open source
 
